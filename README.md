@@ -7,6 +7,9 @@ Overview
 This is Weather Forecast application by [OpenWeatherMap](https://openweathermap.org/)
 This application provide searching random place of Weather forecast and.
 It doesn't show same place again.
+And it has login, sign up function by JWT auth.
+Backend start to login api return JWT auth.
+Then, It register by cookie.
 This composition is used bellow application.
 
 Laravel ruby on rails 5.0.1

@@ -1,0 +1,32 @@
+
+#forecastHeader {
+    margin-top: 1.5em;
+}
+.forecastTitle {
+    text-align: center;
+}
+
+.forecastContainer {
+    width:700px;
+}
+
+.forecastCol {
+    width: 57px;
+    float: left;
+    line-height: 0.5em;
+    font-size: 12px;
+    margin-left: 55px;
+    color: #646464;
+}
+
+.searchButton {
+    margin-right:35px;
+}
+
+.footer-hook {
+    clear: both;
+}
+
+.red {
+    color: red;
+}

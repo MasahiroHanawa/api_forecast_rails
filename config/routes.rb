@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :todos
-
   resources :index
 
   resources :users, only: :create do

@@ -23,7 +23,7 @@ module Users
         @current_user = user
         result = { json: {
             status: 'User confirmed successfully',
-            auth_token: auth_token
+            authorization: auth_token
         }, status: :ok }
       else
         result = { json: {status: 'Invalid token'}, status: :not_found }

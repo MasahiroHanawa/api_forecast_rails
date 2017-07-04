@@ -1,0 +1,8 @@
+.forecastContainer.row.center-block
+    each data in list
+      .forecastCol
+          p
+            img(src= "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png")
+          p=data.temp.day + "°C"
+          p=data.speed + "m/s"
+          p=data.pressure

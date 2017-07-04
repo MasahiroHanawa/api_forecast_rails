@@ -1,0 +1,12 @@
+<div className="forecastContainer row center-block">
+    <% _.each(list, function(data) { %>
+    <div class="forecastCol">
+        <p>
+            <img src="http://openweathermap.org/img/w/<%- data.weather[0].icon %>.png" alt="" />
+        </p>
+        <p><%- data.temp.day %>°C</p>
+        <p><%- data.speed %>m/s</p>
+        <p><%- data.pressure %></p>
+    </div>
+    <% }) %>
+</div>

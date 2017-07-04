@@ -20,6 +20,8 @@ var Diagram = Marionette.LayoutView.extend({
     var labels = [];
     var maxTemp = [];
     var minTemp = [];
+    var d, i, _i, _len;
+    
     Object.keys(this.model.get('list')).forEach( function (key) {
       dt = new Date(this.model.get('list')[key].dt * 1000);
       labels.push(weekDayList[dt.getDay()]);

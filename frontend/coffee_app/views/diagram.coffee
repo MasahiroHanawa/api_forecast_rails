@@ -64,7 +64,7 @@ Diagram = Marionette.LayoutView.extend(
 
     ctx = $("#diagram").get(0).getContext("2d")
     ctx.canvas.width = 600
-    ctx.canvas.height = 250
+    ctx.canvas.height = 300
     ctx.canvas.class = 'center-block'
     myLineChart = new ChartJs(ctx).Line(data)
 )

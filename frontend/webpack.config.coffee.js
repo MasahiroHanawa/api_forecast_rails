@@ -14,7 +14,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
+        use: [ 'style-loader', 'css-loader', 'sass-loader' ]
       },
       {
         test: /\.html$/,
@@ -32,8 +32,34 @@ module.exports = {
           }
         ]
       },
-      { test: /\.pug$/, loader: 'pug-loader' },
-      { test: /\.jade$/, loader: 'jade-loader' }
+      {
+        test: /\.pug$/,
+        loader: 'pug-loader'
+      },
+      {
+        test: /\.jade$/,
+        loader: 'jade-loader'
+      },
+      {
+        test: /\.svg$/,
+        loader: 'url-loader?mimetype=image/svg+xml'
+      },
+      {
+        test: /\.woff$/,
+        loader: 'url-loader?mimetype=application/font-woff'
+      },
+      {
+        test: /\.woff2$/,
+        loader: 'url-loader?mimetype=application/font-woff'
+      },
+      {
+        test: /\.eot$/,
+        loader: 'url-loader?mimetype=application/font-woff'
+      },
+      {
+        test: /\.ttf$/,
+        loader: 'url-loader?mimetype=application/font-woff'
+      }
     ]
   },
   output: {

@@ -1,15 +1,21 @@
-p
-    span#email_error.red
-p
-    label="email"
-    input#email(type="email" name="email" value="")
-p
-    span#password_error.red
-p
-    label="password"
-    input#password(type="password" name="password" value="")
-p
-    input.loginConfirm(type="submit" value="login")
-p="Do you not have account?"
-p="Please sing up "
-    a(href="/#signup/") here
+.container
+    .form-group.clearfix
+        .col-xs-5
+            span#email_error.red
+    .form-group.clearfix
+        .col-xs-5
+            label="email"
+            input#email.form-control(type="email" name="email" value="")
+    .form-group.clearfix
+        .col-xs-5
+            span#password_error.red
+    .form-group.clearfix
+        .col-xs-5
+            label="password"
+            input#password.form-control(type="password" name="password" value="")
+    .form-group.clearfix
+        .col-xs-5
+            input.loginConfirm.btn.btn-default(type="submit" value="login")
+    p="Do you not have account?"
+    p="Please sing up "
+        a(href="/#signup/") here

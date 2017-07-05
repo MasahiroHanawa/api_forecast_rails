@@ -1,11 +1,14 @@
-ul
-    li
-        a.home(href="/") home
-    li
-        a.blog(href="/#blog/") blog
-    if(authorization)
-        li
-            a.logout(href="/#logout/") logout
-    else
-        li
-            a.login(href="/#login/") login
+nav.navbar.navbar-default
+    #gnavi.collapse.navbar-collapse
+        a.navbar-brand(href="#") Forecast Sample
+        ul.nav.navbar-nav
+            li
+                a.home(href="/") home
+            li
+                a.blog(href="/#blog/") blog
+            if(authorization)
+                li
+                    a.logout(href="/#logout/") logout
+            else
+                li
+                    a.login(href="/#login/") login

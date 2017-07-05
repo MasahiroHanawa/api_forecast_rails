@@ -3,7 +3,7 @@ class UserMailer < ApplicationMailer
 
   def confirmation_email(user)
     @user = user
-    @url = 'http://localhost:8081/signup/confirm?confirmation_token=' + @user.confirmation_token
+    @url = 'http://localhost:8081/#signup/confirm?confirmation_token=' + @user.confirmation_token
     mail(
         to: @user.email,
         subject: 'Welcome to My Awesome Site',

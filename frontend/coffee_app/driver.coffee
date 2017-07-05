@@ -1,6 +1,8 @@
 Marionette = require('backbone.marionette')
 Router = require('./routers/router.coffee')
 Style = require('./css/style.css')
+#Bootstrap = require('bootstrap')
+require('bootstrap/dist/css/bootstrap.css')
 
 initialData =
   pages:
@@ -54,10 +56,10 @@ App = new Marionette.Application(
   onStart: (options) ->
     router = new Router(options)
 
-#    Backbone.history.start(
-#      pushState: true
-#    )
-    Backbone.history.start()
+    Backbone.history.start(
+      pushState: true
+    )
+#    Backbone.history.start()
 )
 
 App.start(initialData: initialData)

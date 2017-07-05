@@ -1,17 +1,25 @@
-p
-    span#email_error.red
-p
-    label="email"
-    input#email(type="email" name="email" value="")
-p
-    span#password_error.red
-p
-    label="password"
-    input#password(type="password" name="password" value="")
-p
-    span#password_confirm_error.red
-p
-    label="password"
-    input#password_confirm(type="password" name="password_confirm" value="")
-p
-    input.signupConfirm(type="submit" value="signup")
+.container
+    .form-group
+        .col-xs-5.clearfix
+            span#email_error.red
+    .form-group.clearfix
+        .col-xs-5.clearfix
+            label="email"
+            input#email.form-control(type="email" name="email" value="")
+    .form-group.clearfix
+        .col-xs-5.clearfix
+            span#password_error.red
+    .form-group.clearfix
+        .col-xs-5.clearfix
+            label="password"
+            input#password.form-control(type="password" name="password" value="")
+    .form-group.clearfix
+        .col-xs-5.clearfix
+            span#password_confirm_error.red
+    .form-group.clearfix
+        .col-xs-5.clearfix
+            label="password"
+            input#password_confirm.form-control(type="password" name="password_confirm" value="")
+    .form-group.clearfix
+        .col-xs-5.clearfix
+            input.signupConfirm.btn.btn-default(type="submit" value="signup")
